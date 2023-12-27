@@ -1,6 +1,6 @@
 # Bluetooth DOS-Attack Script
 
-![Logo](https://github.com/Jvr2022/BLUETOOTH-DOS-ATTACK/tree/main/src/images/logo.png)
+![Logo](https://github.com/Jvr2022/BLUETOOTH-DOS-ATTACK/blob/main/src/images/logo.png)
 ![Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
 
 Script for conducting DOS-attacks on Bluetooth devices for pentest purposes.
