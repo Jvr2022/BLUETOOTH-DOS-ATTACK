@@ -1,4 +1,4 @@
-# Bluetooth DOS-Attack Script
+# Bluetooth DOS-Attack
 
 ![Logo](https://github.com/Jvr2022/BLUETOOTH-DOS-ATTACK/blob/main/src/images/logo.png)
 ![Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
