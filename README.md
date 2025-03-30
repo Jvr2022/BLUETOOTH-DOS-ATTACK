@@ -1,9 +1,10 @@
-# Bluetooth DOS-Attack
+# Bluetooth Denial-of-Service (DoS) Attack Tool
 
-![Logo](https://github.com/Jvr2022/BLUETOOTH-DOS-ATTACK/blob/main/src/images/logo.png)
-![Python Version](https://img.shields.io/pypi/pyversions/Django.svg)
+![Logo](src/images/logo.png)
 
-Script for conducting DOS-attacks on Bluetooth devices for pentest purposes.
+A Python script designed for conducting Denial-of-Service (DoS) attacks on Bluetooth devices for penetration testing and security research purposes.
+
+[![Python Versions](https://img.shields.io/pypi/pyversions/Django.svg)](https://www.python.org/)
 
 ## Disclaimer
 
