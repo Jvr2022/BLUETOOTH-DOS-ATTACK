@@ -2,57 +2,77 @@
 
 ![Logo](src/images/logo.png)
 
-A Python script designed for conducting Denial-of-Service (DoS) attacks on Bluetooth devices for penetration testing and security research purposes.
+A Python-based tool for performing Bluetooth Denial-of-Service (DoS) attacks, intended strictly for penetration testing and security research.
 
 [![Python Versions](https://img.shields.io/pypi/pyversions/Django.svg)](https://www.python.org/)
 
+---
+
 ## Disclaimer
 
-This project was created for educational purposes and personal use only.
+This tool is developed for educational and authorized testing purposes only.  
+You are solely responsible for using it in a legal and ethical manner.
 
-**DISCLAIMER:** This software is provided "as is" without any warranty. Usage is at your own risk. The developers assume no liability for any misuse or damage caused by this program.
+**Disclaimer:** The software is provided “as is,” without warranty of any kind. The authors are not liable for any misuse, damage, or consequences arising from its use.
+
+---
 
 ## Installation
 
 ### Linux
-1. Download the [Linux Release](https://github.com/Jvr2022/Bluetooth-DOS-Attack/releases).
-2. Extract the release archive.
-3. Open a terminal in the extracted directory.
-4. Run the python script:
+1. [Download the latest Linux release](https://github.com/Jvr2022/Bluetooth-DOS-Attack/releases).
+2. Extract the archive.
+3. Open a terminal in the extracted folder.
+4. Run the Python script.
 
 ### Windows
-1. Download the [Windows Release](https://github.com/Jvr2022/Bluetooth-DOS-Attack/releases).
-2. Extract the release archive.
-3. Open a terminal in the extracted directory.
-4. Run the python script:
+1. [Download the latest Windows release](https://github.com/Jvr2022/Bluetooth-DOS-Attack/releases).
+2. Extract the archive.
+3. Open a terminal in the extracted folder.
+4. Run the Python script.
 
-## Note
+---
 
-This script is designed to work only on Linux systems.You must have "l2ping" and "hcitool" utilities on your Linux machine (they are installed by default on Kali Linux).
+## Requirements
 
-## Tested on
+Note: This script is designed primarily for Linux.  
+Ensure the following utilities are installed:
+- l2ping
+- hcitool  
+(Pre-installed on Kali Linux.)
 
-- Kali Linux as the attacking platform, targeting Xiaomi Portable Bluetooth Speaker.
-- Raspberry Pi W Zero as the attacker, targeting Redmi Buds Lite.
+---
 
-## Manual
+## Tested On
 
-- **Target ID or MAC:** Utilize the ID or MAC address displayed post-scanning.
-- **Package Size:** Set the size of the packages to be sent to the target (600 is recommended).
-- **Threads Count:** Specify the number of threads simultaneously sending packages to the target. Optimal values are provided in the table below.
+- Kali Linux attacking Xiaomi Portable Bluetooth Speaker
+- Raspberry Pi Zero W attacking Redmi Buds Lite
 
-|  Packages size | Threads count| Ping, ms  | Distance, meters | Time waited, sec  | Device |
-|:--------------:|:-----: |:------------:|:--------------------:|:----------------:|:------:|
-|  600           | 1       | 9           |0,3                   |           5      |Xiaomi Mi Portable Bluetooth Speaker|
-|  600           | 10      | 38          |0,3                   |           5      |Xiaomi Mi Portable Bluetooth Speaker|
-|  600           | 20      | 78          |0,3                   |           5      |Xiaomi Mi Portable Bluetooth Speaker|
-|  600           | 50      | 229         |0,3                   |           5      |Xiaomi Mi Portable Bluetooth Speaker|
-|  600           | 100     | 413         |0,3                   |           5      |Xiaomi Mi Portable Bluetooth Speaker|
-|  600           | 200     | 806         |0,3                   |           5      |Xiaomi Mi Portable Bluetooth Speaker|
-|  600           | 500     | 1961        |0,3                   |           5      |Xiaomi Mi Portable Bluetooth Speaker|
-|  600           | 1000    | 6621        |0,3                   |           5      |Xiaomi Mi Portable Bluetooth Speaker|
-|  600           | 1000+   | Couldn't calculate  |0,3           |           5      |Xiaomi Mi Portable Bluetooth Speaker|
+---
 
-## What Happens to the Target Device
+## Usage Guide
 
-While the behavior may vary between devices, the tested device typically powers off.
+- Target ID / MAC: Use the address shown after scanning.
+- Package Size: Number of bytes sent per packet (Recommended: 600).
+- Thread Count: Number of concurrent threads sending packets.
+
+### Performance Table
+
+| Package Size | Threads | Ping (ms) | Distance (m) | Wait (s) | Device |
+|--------------|---------|-----------|--------------|----------|--------|
+| 600          | 1       | 9         | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 10      | 38        | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 20      | 78        | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 50      | 229       | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 100     | 413       | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 200     | 806       | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 500     | 1961      | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 1000    | 6621      | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 1000+   | N/A       | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+
+---
+
+## Effect on Target Devices
+
+Behavior varies by device.  
+In testing, the target often shuts down or becomes unresponsive until restarted.
