@@ -54,4 +54,19 @@ Ensure the following utilities are installed:
 
 | Package Size | Threads | Ping (ms) | Distance (m) | Wait (s) | Device |
 |--------------|---------|-----------|--------------|----------|--------|
-| 600          | 1       | 9         | 0.3          | 5        | Xiaomi Mi Portable Bluetooth
+| 600          | 1       | 9         | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 10      | 38        | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 20      | 78        | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 50      | 229       | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 100     | 413       | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 200     | 806       | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 500     | 1961      | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 1000    | 6621      | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+| 600          | 1000+   | N/A       | 0.3          | 5        | Xiaomi Mi Portable Bluetooth Speaker |
+
+---
+
+## Effect on Target Devices
+
+Behavior varies by device.  
+In testing, the target often shuts down or becomes unresponsive until restarted.
